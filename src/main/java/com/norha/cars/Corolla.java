@@ -2,16 +2,16 @@ package com.norha.cars;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
+
 
 import com.norha.interfaces.Car;
 import com.norha.interfaces.Engine;
 
-@Component("myCorolla")
+
 public class Corolla implements Car {
 
 	@Autowired 
-	@Qualifier("V8Engine")
+	@Qualifier("V6Engine")
 	Engine engine;
 	
 
